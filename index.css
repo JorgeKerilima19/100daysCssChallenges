@@ -1,0 +1,9 @@
+html {
+  font-size: 100%;
+}
+body {
+  background-color: rgb(231, 231, 231);
+}
+[class^="day"] {
+  min-height: 100vh;
+}
