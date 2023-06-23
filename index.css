@@ -2,8 +2,68 @@ html {
   font-size: 100%;
 }
 body {
-  background-color: rgb(231, 231, 231);
+  background-color: hsl(0, 0%, 91%);
+}
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  position: relative;
 }
 [class^="day"] {
   min-height: 100vh;
+}
+
+.day-1__bg {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  background: linear-gradient(45deg, #43389f 25%, #4ec6ca);
+}
+[class*="number"] {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.349) 0.2rem 0.1rem 0.5rem;
+}
+.dy-1__number__1-1 {
+  position: relative;
+  height: 15rem;
+  width: 2.8rem;
+  z-index: 100;
+}
+.dy-1__number__1-2 {
+  height: 5rem;
+  width: 2.5rem;
+  position: absolute;
+  left: -2rem;
+  top: 0.4rem;
+  transform: rotate(45deg);
+  background-color: rgb(236, 236, 236);
+}
+.dy-1__number__0-1 {
+  background-color: transparent;
+  height: 15rem;
+  width: 15rem;
+  border: 3.5rem solid white;
+  border-radius: 50%;
+  position: relative;
+  left: -1rem;
+  z-index: 4;
+}
+.dy-1__number__0-2 {
+  background-color: transparent;
+  height: 15rem;
+  width: 15rem;
+  border: 3.5rem solid white;
+  border-radius: 50%;
+  position: relative;
+  left: -4rem;
 }
