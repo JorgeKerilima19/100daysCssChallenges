@@ -11,6 +11,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  transition: 0.3s;
 }
 .container {
   display: flex;
@@ -19,63 +20,67 @@ body {
 [class^="day"] {
   min-height: 100vh;
 }
-
+.nmbr-container {
+  display: flex;
+  padding-left: 4em;
+}
 .day-1__bg {
+  font-size: 100%;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2em;
+  gap: 2rem;
   background: linear-gradient(45deg, #43389f 25%, #4ec6ca);
 }
 [class*="number"] {
   background-color: white;
-  border-radius: 0.5rem;
-  box-shadow: rgba(0, 0, 0, 0.349) 0.2rem 0.1rem 0.5rem;
-}
-.container-1 {
-  margin-left: 5rem;
+  border-radius: 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.349) 0.2em 0.1em 0.5em;
 }
 .dy-1__number__1-1 {
   position: relative;
-  height: 12rem;
-  width: 2.5rem;
+  height: 12em;
+  width: 2.5em;
   z-index: 100;
 }
 .dy-1__number__1-2 {
-  height: 5rem;
-  width: 2.5rem;
+  height: 5em;
+  width: 2.5em;
   position: absolute;
-  left: -2rem;
-  top: 0.4rem;
+  left: 2em;
+  top: 0.4em;
   transform: rotate(45deg);
   background-color: rgb(236, 236, 236);
 }
 .dy-1__number__0-1,
 .dy-1__number__0-2 {
   background-color: transparent;
-  height: 12rem;
-  min-width: 12rem;
-  border: 3rem solid white;
+  height: 12em;
+  width: 12em;
+  border: 3em solid white;
   border-radius: 50%;
   position: relative;
 }
 .dy-1__number__0-1 {
-  left: -1rem;
+  left: -1em;
   z-index: 4;
 }
 .dy-1__number__0-2 {
   position: relative;
-  left: -4rem;
+  left: -4em;
 }
 .dy-1__title {
-  font-size: 10.5rem;
+  font-size: 10.5em;
   font-weight: 700;
-  line-height: 4rem;
 }
 .dy-1__subtitle {
-  line-height: 5rem;
   font-weight: 700;
-  font-size: 3.1rem;
+  font-size: 3.1em;
+}
+@media (max-width: 500px) {
+  .day-1__bg {
+    font-size: 60%;
+  }
 }
