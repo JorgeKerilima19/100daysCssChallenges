@@ -24,13 +24,17 @@ body {
   display: flex;
   padding-left: 4em;
 }
+[class*="__bg"] {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .day-1__bg {
   font-size: 100%;
   color: white;
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 2rem;
   background: linear-gradient(45deg, #43389f 25%, #4ec6ca);
 }
@@ -78,6 +82,28 @@ body {
 .dy-1__subtitle {
   font-weight: 700;
   font-size: 3.1em;
+}
+
+.day-2__bg {
+  background-color: rgba(26, 26, 226, 0.452);
+}
+.dy-2__container {
+  min-height: 15rem;
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+[class^="dy-2__hamburger__bar"] {
+  display: block;
+  width: 12rem;
+  height: 2rem;
+  background-color: white;
+}
+.dy-2__hamburguer__bar-1 {
 }
 @media (max-width: 500px) {
   .day-1__bg {
