@@ -106,39 +106,44 @@ body {
 }
 .dy-2__container.open .dy-2__hamburger__bar-1 {
   background-color: #43389f;
-  animation: bar-1__open 0.5s forwards;
+  animation: bar-1__open 0.8s forwards;
 }
 .dy-2__container .dy-2__hamburger__bar-1 {
   background-color: #43389f;
-  animation: bar-1__close 0.5s forwards;
+  animation: bar-1__close 0.8s forwards;
 }
 .dy-2__container.open .dy-2__hamburger__bar-2 {
-  width: 0;
-  transition: 0.8s;
+  /* width: 0;
+  transition: 0.8s; */
 }
 .dy-2__container.open .dy-2__hamburger__bar-3 {
-  bottom: 0em;
+  animation: bar-3__open 0.8s forwards;
+  background-color: #4ec6ca;
+}
+.dy-2__container .dy-2__hamburger__bar-3 {
+  animation: bar-3__close 0.8s forwards;
   background-color: #4ec6ca;
 }
 
 @keyframes bar-1__open {
   0% {
+    top: 0;
     transform: translateY(0) rotate(0);
   }
   50% {
     transform: translateY(0) rotate(0);
   }
   100% {
+    top: 25%;
     transform: translateY(2em) rotate(60deg);
   }
 }
 @keyframes bar-1__close {
   0% {
-    top: 50%;
+    top: 25%;
     transform: translateY(2em) rotate(60deg);
   }
   50% {
-    top: 50%;
     transform: translateY(2em) rotate(60deg);
   }
   100% {
@@ -147,6 +152,32 @@ body {
   }
 }
 
+@keyframes bar-3__open {
+  0% {
+    bottom: 0%;
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(0) rotate(0);
+  }
+  100% {
+    bottom: 20%;
+    transform: translateY(-2em) rotate(-60deg);
+  }
+}
+@keyframes bar-3__close {
+  0% {
+    bottom: 25%;
+    transform: translateY(-2em) rotate(-60deg);
+  }
+  50% {
+    transform: translateY(-2em) rotate(-60deg);
+  }
+  100% {
+    bottom: 0;
+    transform: translateY(0) rotate(0);
+  }
+}
 @media (max-width: 500px) {
   .day-1__bg {
     font-size: 60%;
