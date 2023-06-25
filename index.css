@@ -88,7 +88,7 @@ body {
   background-color: rgba(26, 26, 226, 0.452);
 }
 .dy-2__container {
-  min-height: 15rem;
+  min-height: 10rem;
   width: 15rem;
   display: flex;
   flex-direction: column;
@@ -98,35 +98,52 @@ body {
   position: relative;
 }
 [class^="dy-2__hamburger__bar"] {
-  display: block;
   width: 12rem;
   height: 1.5rem;
   border-radius: 0.5rem;
   background-color: white;
+  position: absolute;
 }
-.animation__open {
-  animation: menu-1 0.5s;
-  animation-fill-mode: forwards;
+.dy-2__container.open .dy-2__hamburger__bar-1 {
+  background-color: #43389f;
+  animation: bar-1__open 0.5s forwards;
 }
-.animation__close {
-  animation-fill-mode: forwards;
-  animation: menu-2 0.5s;
+.dy-2__container .dy-2__hamburger__bar-1 {
+  background-color: #43389f;
+  animation: bar-1__close 0.5s forwards;
 }
-@keyframes menu-1 {
+.dy-2__container.open .dy-2__hamburger__bar-2 {
+  width: 0;
+  transition: 0.8s;
+}
+.dy-2__container.open .dy-2__hamburger__bar-3 {
+  bottom: 0em;
+  background-color: #4ec6ca;
+}
+
+@keyframes bar-1__open {
   0% {
-    transform: rotate(0deg);
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(0) rotate(0);
   }
   100% {
-    transform: rotate(45deg);
-    background-color: #4ec6ca;
+    transform: translateY(2em) rotate(60deg);
   }
 }
-@keyframes menu-2 {
+@keyframes bar-1__close {
   0% {
-    transform: rotate(45deg);
+    top: 50%;
+    transform: translateY(2em) rotate(60deg);
+  }
+  50% {
+    top: 50%;
+    transform: translateY(2em) rotate(60deg);
   }
   100% {
-    transform: rotate(0deg);
+    top: 0;
+    transform: translateY(0) rotate(0);
   }
 }
 
