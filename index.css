@@ -270,7 +270,18 @@ body {
   z-index: 100;
   animation: dy3-pyramid-shadow 4s infinite reverse;
 }
-
+.dy-3__shadow {
+  position: absolute;
+  z-index: 100;
+  top: 70%;
+  left: 19%;
+  height: 2em;
+  width: 53%;
+  background: rgba(0, 0, 0, 0.158);
+  transform-origin: 50% 0%;
+  clip-path: polygon(95% 0, 0 0, 100% 31%);
+  animation: dy-3-floor-shadow 4s infinite;
+}
 @keyframes dy3-sunset {
   0% {
     transform: rotate(-20deg);
@@ -294,6 +305,31 @@ body {
   }
   100% {
     background-color: rgb(163, 163, 163);
+  }
+}
+@keyframes dy-3-floor-shadow {
+  0% {
+    background: rgba(0, 0, 0, 0.158);
+    transform: scaleY(0.4);
+  }
+  25% {
+    background: rgba(0, 0, 0, 0.158);
+    clip-path: polygon(95% 0, 0 0, 100% 31%);
+
+    background: rgba(0, 0, 0, 0.096);
+    transform: scaleY(5);
+  }
+  50% {
+    clip-path: polygon(95% 0, 0 0, 50% 73%);
+    background: rgba(0, 0, 0, 0);
+  }
+  75% {
+    background: rgba(0, 0, 0, 0.068);
+    transform: scaleY(2);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.562);
+    clip-path: polygon(95% 0, 0 0, 0 40%);
   }
 }
 
