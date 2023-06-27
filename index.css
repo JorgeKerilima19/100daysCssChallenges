@@ -213,15 +213,15 @@ body {
 }
 
 .day-3__bg {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 .dy-3__container {
   width: 20rem;
   height: 20rem;
-  background-color: white;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
+  animation: dy-3-bg-shadow 4s infinite;
 }
 .dy-3__sky {
   background-color: rgb(54, 191, 245);
@@ -235,7 +235,7 @@ body {
   top: 70%;
   height: 30%;
   width: 100%;
-  background-color: rgb(214, 211, 41);
+  background-color: rgb(238, 204, 111);
 }
 .dy-3__sun {
   background-color: yellow;
@@ -277,7 +277,6 @@ body {
   left: 19%;
   height: 2em;
   width: 53%;
-  background: rgba(0, 0, 0, 0.158);
   transform-origin: 50% 0%;
   clip-path: polygon(95% 0, 0 0, 100% 31%);
   animation: dy-3-floor-shadow 4s infinite;
@@ -330,6 +329,18 @@ body {
   100% {
     background: rgba(0, 0, 0, 0.562);
     clip-path: polygon(95% 0, 0 0, 0 40%);
+  }
+}
+@keyframes dy-3-bg-shadow {
+  0% {
+    opacity: 0.4;
+  }
+  50%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.767);
   }
 }
 
