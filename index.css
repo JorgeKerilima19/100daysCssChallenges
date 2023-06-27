@@ -244,7 +244,9 @@ body {
   position: absolute;
   border-radius: 50%;
   top: 2em;
-  left: 3em;
+  left: 1em;
+  transform-origin: 200% 800%;
+  animation: dy3-sunset 4s ease-in-out infinite;
 }
 .dy-3__pyramid-left {
   background-color: aliceblue;
@@ -266,6 +268,19 @@ body {
   clip-path: polygon(50% 0%, 100% 100%, 69% 100%);
   z-index: 100;
 }
+
+@keyframes dy3-sunset {
+  0% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
 @media (max-width: 500px) {
   .day-1__bg {
     font-size: 60%;
