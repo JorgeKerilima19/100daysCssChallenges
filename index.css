@@ -211,6 +211,16 @@ body {
     transform: translateY(0) rotate(0);
   }
 }
+
+.day-3__bg{
+  background-color: black;
+}
+.dy-3__container{
+  width: 20rem;
+  height: 20rem;
+  background-color: white;
+  border-radius: 50%;
+}
 @media (max-width: 500px) {
   .day-1__bg {
     font-size: 60%;
