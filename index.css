@@ -407,6 +407,29 @@ body {
   }
 }
 
+.day-5__bg {
+  background-color: rgb(19, 141, 125);
+}
+.dy__5-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 18rem;
+  width: 25rem;
+  background-color: antiquewhite;
+}
+.dy__5-container__upper{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgb(235, 174, 44);
+  padding: 1rem;
+}
+.dy__5-container__upper-right{
+  text-align: right;
+}
+
+
 @media (max-width: 500px) {
   .day-1__bg {
     font-size: 60%;
