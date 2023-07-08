@@ -409,13 +409,14 @@ body {
 
 .day-5__bg {
   background-color: rgb(19, 141, 125);
+  font-family: "open-sans";
 }
 .dy__5-container {
   display: flex;
   align-items: center;
   flex-direction: column;
   min-height: 18rem;
-  width: 25rem;
+  width: min(23rem, 100%);
   background-color: antiquewhite;
 }
 .dy__5-container__upper {
@@ -459,7 +460,7 @@ body {
 }
 .dy__5-container__bottom-graphics {
   width: 100%;
-  min-height: 10rem;
+  min-height: 8rem;
 }
 .dy__5-container__bottom-graphics__background {
   position: relative;
@@ -481,20 +482,28 @@ body {
 .dy__5__line-3 {
   top: 100%;
 }
-.dy__5-container__bottom-graphics__views {
+.dy__5-container__bottom-graphics__views,
+.dy__5-container__bottom-graphics__purchases {
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
 }
-.dy__5-container__bottom-graphics__views svg {
+.dy__5-container__bottom-graphics__views svg,
+.dy__5-container__bottom-graphics__purchases svg {
   width: 100%;
 }
-.dy__5-container__bottom-graphics__views svg polyline {
+.dy__5-container__bottom-graphics__views svg polyline,
+.dy__5-container__bottom-graphics__purchases svg polyline {
   fill: none;
   stroke-width: 0.17rem;
+}
+.dy__5-container__bottom-graphics__views svg polyline {
   stroke: red;
+}
+.dy__5-container__bottom-graphics__purchases svg polyline {
+  stroke: blue;
 }
 [class^="dy__5-point__red"] {
   background-color: red;
@@ -503,40 +512,74 @@ body {
   position: absolute;
   border-radius: 50%;
 }
+[class^="dy__5-point__blue"] {
+  background-color: blue;
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  border-radius: 50%;
+}
 .dy__5-point__red-1 {
-  top: 48%;
+  top: 53.5%;
   left: 2%;
 }
 .dy__5-point__red-2 {
-  top: 28%;
-  left: 17.5%;
+  top: 32%;
+  left: 17%;
 }
 .dy__5-point__red-3 {
-  top: 37.5%;
-  left: 33%;
+  top: 42.5%;
+  left: 32.7%;
 }
 .dy__5-point__red-4 {
-  top: 26%;
-  left: 48.8%;
+  top: 29.5%;
+  left: 48%;
 }
 .dy__5-point__red-5 {
-  top: 41.2%;
+  top: 47%;
   left: 63.5%;
 }
 .dy__5-point__red-6 {
-  top: 49.5%;
-  left: 80.4%;
+  top: 57.5%;
+  left: 79%;
 }
 .dy__5-point__red-7 {
-  top: 30%;
-  left: 96%;
+  top: 35%;
+  left: 94%;
 }
-
+.dy__5-point__blue-1 {
+  top: 65.5%;
+  left: 2%;
+}
+.dy__5-point__blue-2 {
+  top: 58%;
+  left: 17%;
+}
+.dy__5-point__blue-3 {
+  top: 68%;
+  left: 32.7%;
+}
+.dy__5-point__blue-4 {
+  top: 60%;
+  left: 48.5%;
+}
+.dy__5-point__blue-5 {
+  top: 64%;
+  left: 63.5%;
+}
+.dy__5-point__blue-6 {
+  top: 74.5%;
+  left: 79%;
+}
+.dy__5-point__blue-7 {
+  top: 66%;
+  left: 94%;
+}
 .dy__5-container__bottom__days {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
-  gap: 1rem;
+  gap: 0.3rem;
   width: 100%;
 }
 .dy__5-day {
