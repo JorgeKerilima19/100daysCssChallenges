@@ -414,21 +414,88 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 18rem;
+  min-height: 18rem;
   width: 25rem;
   background-color: antiquewhite;
 }
-.dy__5-container__upper{
+.dy__5-container__upper {
   display: flex;
   justify-content: space-between;
   width: 100%;
   background-color: rgb(235, 174, 44);
   padding: 1rem;
+  color: white;
 }
-.dy__5-container__upper-right{
+.dy__5-container__upper-right {
   text-align: right;
 }
-
+.dy__5-container__bottom {
+  position: relative;
+  width: 100%;
+}
+.dy__5-container__bottom-parameters {
+  display: flex;
+  gap: 5rem;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+.dy__5-container__bottom-parameters > * {
+  position: relative;
+}
+.dy__5-container__bottom-parameters__views::before,
+.dy__5-container__bottom-parameters__purchases::before {
+  content: "";
+  width: 1.5rem;
+  height: 0.2rem;
+  position: absolute;
+  left: -2rem;
+  top: 50%;
+}
+.dy__5-container__bottom-parameters__views::before {
+  background-color: red;
+}
+.dy__5-container__bottom-parameters__purchases::before {
+  background-color: blue;
+}
+.dy__5-container__bottom-graphics {
+  width: 100%;
+  min-height: 10rem;
+}
+.dy__5-container__bottom-graphics__background {
+  position: relative;
+  height: 7rem;
+  width: 100%;
+}
+.dy__5__line-1,
+.dy__5__line-2,
+.dy__5__line-3 {
+  position: absolute;
+  width: 100%;
+  height: 0.1rem;
+  background-color: rgb(99, 95, 95);
+  top: 0;
+}
+.dy__5__line-2 {
+  top: 50%;
+}
+.dy__5__line-3 {
+  top: 100%;
+}
+.dy__5-container__bottom-graphics__views {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.dy__5-container__bottom-graphics__views svg {
+  width: 100%;
+}
+.dy__5-container__bottom-graphics__views svg polyline {
+  fill: none;
+  stroke-width: 0.2rem;
+  stroke: red;
+}
 
 @media (max-width: 500px) {
   .day-1__bg {
