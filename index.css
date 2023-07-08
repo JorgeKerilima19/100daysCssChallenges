@@ -493,10 +493,56 @@ body {
 }
 .dy__5-container__bottom-graphics__views svg polyline {
   fill: none;
-  stroke-width: 0.2rem;
+  stroke-width: 0.17rem;
   stroke: red;
 }
+[class^="dy__5-point__red"] {
+  background-color: red;
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  border-radius: 50%;
+}
+.dy__5-point__red-1 {
+  top: 48%;
+  left: 2%;
+}
+.dy__5-point__red-2 {
+  top: 28%;
+  left: 17.5%;
+}
+.dy__5-point__red-3 {
+  top: 37.5%;
+  left: 33%;
+}
+.dy__5-point__red-4 {
+  top: 26%;
+  left: 48.8%;
+}
+.dy__5-point__red-5 {
+  top: 41.2%;
+  left: 63.5%;
+}
+.dy__5-point__red-6 {
+  top: 49.5%;
+  left: 80.4%;
+}
+.dy__5-point__red-7 {
+  top: 30%;
+  left: 96%;
+}
 
+.dy__5-container__bottom__days {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  gap: 1rem;
+  width: 100%;
+}
+.dy__5-day {
+  width: 100%;
+  text-align: center;
+}
 @media (max-width: 500px) {
   .day-1__bg {
     font-size: 60%;
