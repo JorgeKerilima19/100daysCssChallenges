@@ -651,16 +651,59 @@ body {
   display: inherit;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
+}
+.dy__6__profile__profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dy__6__profile__profile-container h3 {
+  color: rgb(116, 65, 32);
+  font-weight: 600;
+  letter-spacing: 0.01rem;
+}
+.dy__6__profile__profile-container span {
+  color: rgb(116, 65, 32);
+  font-size: 0.8rem;
 }
 .dy__6__profile__image-container {
   width: 50%;
   display: flex;
   justify-content: center;
+  position: relative;
+}
+[class^="dy__6__profile__image-circle"] {
+  position: absolute;
+  border-radius: 50%;
+  border-width: 0.1rem;
+  border-style: solid;
+  transition: 1.5s ease-in-out;
+}
+.dy__6__profile__image-circle-1 {
+  top: -0.5rem;
+  height: 120%;
+  width: 120%;
+  border-color: rgb(116, 65, 32) transparent rgb(116, 65, 32) rgb(116, 65, 32);
+}
+.dy__6__profile__image-circle-2 {
+  top: -0.2rem;
+  height: 110%;
+  width: 110%;
+  border-color: rgb(116, 65, 32) rgb(116, 65, 32) rgb(116, 65, 32) transparent;
 }
 .dy__6__profile__image-container img {
   border-radius: 50%;
   width: 100%;
+}
+.dy__6__profile__image-container:hover {
+  cursor: pointer;
+}
+.dy__6__profile__image-container:hover .dy__6__profile__image-circle-1 {
+  transform: rotate(360deg);
+}
+.dy__6__profile__image-container:hover .dy__6__profile__image-circle-2 {
+  transform: rotate(-360deg);
 }
 .dy__6__profile__button-container {
   display: flex;
@@ -696,7 +739,7 @@ body {
 .dy__6__left-container > * {
   height: 33%;
   width: 100%;
-  background-color: rgba(116, 66, 32, 0.308);
+  background-color: rgba(116, 66, 32, 0.178);
   color: rgb(116, 65, 32);
 }
 .dy__6__left-container__md span:first-child {
