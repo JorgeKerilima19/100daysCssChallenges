@@ -628,6 +628,72 @@ body {
   top: -2.5rem;
   z-index: 0;
 }
+.day-6__bg {
+  background: linear-gradient(45deg, rgb(255, 218, 54), rgb(136, 82, 0) 80%);
+  font-family: sans-serif;
+}
+.dy__6-container {
+  width: 20rem;
+  background-color: antiquewhite;
+  height: 20rem;
+  display: flex;
+  border-radius: 0.5rem;
+}
+.dy__6__right-container {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.dy__6__right-container__profile {
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.dy__6__profile__image-container {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+.dy__6__profile__image-container img {
+  border-radius: 50%;
+  width: 100%;
+}
+.dy__6__left-container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  justify-content: center;
+}
+.dy__6__left-container > * {
+  height: 33%;
+}
+.dy__6__profile__button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+}
+.dy__6__button {
+  width: 80%;
+  height: 2.1rem;
+  border-radius: 1rem;
+  outline: transparent;
+  border: 0.1rem solid rgb(116, 65, 32);
+  color: rgb(116, 65, 32);
+  font-size: inherit;
+  transition: 0.3s;
+  font-weight: 600;
+  letter-spacing: -0.08rem;
+}
+.dy__6__button:hover {
+  background-color: rgb(116, 65, 32);
+  color: white;
+}
 @media (max-width: 500px) {
   .day-1__bg {
     font-size: 60%;
