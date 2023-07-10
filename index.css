@@ -742,6 +742,9 @@ body {
   background-color: rgba(116, 66, 32, 0.178);
   color: rgb(116, 65, 32);
 }
+.dy__6__left-container > *:hover {
+  background-color: rgba(116, 66, 32, 0.329);
+}
 .dy__6__left-container__md span:first-child {
   font-weight: 600;
   font-size: 1.2rem;
@@ -749,6 +752,9 @@ body {
 .dy__6__left-container__md span:nth-child(2) {
   font-weight: 300;
   font-size: 0.8rem;
+}
+.day-7__bg{
+  background-color: rgb(31, 44, 80);
 }
 @media (max-width: 500px) {
   .day-1__bg {
