@@ -769,6 +769,7 @@ body {
   align-items: center;
   background-color: #5f98cd;
   color: white;
+  position: relative;
 }
 .dy-7__navbar-container {
   width: 4rem;
@@ -818,7 +819,26 @@ body {
   right: -0.5rem;
   transform: rotate(45deg);
 }
-
+.dy-7__navbar__search-input {
+  width: 15rem;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  background-color: white;
+  position: absolute;
+  left: 1rem;
+  border: 0;
+  outline: 0;
+  transform: translateX(10%);
+  pointer-events: none;
+  filter: opacity(0);
+  transition: 0.3s ease-in-out;
+  border-radius: 1rem;
+}
+.search-open {
+  pointer-events: all;
+  transform: translateX(0%);
+  filter: opacity(1);
+}
 @media (max-width: 500px) {
   .day-1__bg {
     font-size: 60%;
