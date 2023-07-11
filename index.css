@@ -753,9 +753,72 @@ body {
   font-weight: 300;
   font-size: 0.8rem;
 }
-.day-7__bg{
+.day-7__bg {
   background-color: rgb(31, 44, 80);
+  font-family: sans-serif;
 }
+.dy-7__container-front {
+  width: 20rem;
+  height: 20rem;
+  background-color: #4ec6ca;
+}
+.dy-7__container-front__navbar {
+  display: flex;
+  justify-content: space-evenly;
+  height: 4rem;
+  align-items: center;
+  background-color: #5f98cd;
+  color: white;
+}
+.dy-7__navbar-container {
+  width: 4rem;
+  height: 3rem;
+  position: relative;
+}
+[class^="dy-7__navbar__"] {
+  background-color: #b2daff;
+  position: absolute;
+  border-radius: 0.5rem;
+}
+.dy-7__navbar__bar-small {
+  width: 1.8rem;
+  height: 0.4rem;
+  top: 25%;
+}
+.dy-7__navbar__circle {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  top: 20%;
+  left: 50%;
+}
+.dy-7__navbar__bar-large {
+  width: 2.55rem;
+  height: 0.4rem;
+  bottom: 25%;
+}
+.dy-7__navbar__search-icon {
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 0.3rem;
+  border-color: #b2daff;
+  box-sizing: initial;
+  border-radius: 50%;
+  position: relative;
+}
+.dy-7__navbar__search-icon::after {
+  content: "";
+  height: 0.3rem;
+  width: 0.5rem;
+  position: absolute;
+  background: #b2daff;
+  bottom: -0.35rem;
+  right: -0.5rem;
+  transform: rotate(45deg);
+}
+
 @media (max-width: 500px) {
   .day-1__bg {
     font-size: 60%;
