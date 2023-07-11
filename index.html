@@ -201,10 +201,10 @@
       </section>
       <section class="day__7">
         <header class="container__header">Day7</header>
-        <div class="day-7__bg">
-          <div class="dy-7__container-front">
+        <div class="day-7__bg container">
+          <div id="dy-7__front" class="dy-7__container-front">
             <div class="dy-7__container-front__navbar">
-              <div class="dy-7__navbar-container">
+              <div id="dy-7__navbar" class="dy-7__navbar-container">
                 <span class="dy-7__navbar__bar-small"></span>
                 <span class="dy-7__navbar__circle"></span>
                 <span class="dy-7__navbar__bar-large"></span>
@@ -230,15 +230,54 @@
                   posted a photo on your wall.
                 </p>
               </div>
-              
+              <div class="dy-7__content">
+                <div class="dy7__content-date">
+                  <div class="dy7__content-date__circle"></div>
+                  <div class="dy7__content-date__date">8:19 AM</div>
+                </div>
+                <p class="dy7__content-text">
+                  <span class="dy7__content-text__user">Alice Parker </span>
+                  commented your last post.
+                </p>
+              </div>
+              <div class="dy-7__content">
+                <div class="dy7__content-date">
+                  <div class="dy7__content-date__circle"></div>
+                  <div class="dy7__content-date__date">Yesterday</div>
+                </div>
+                <p class="dy7__content-text">
+                  <span class="dy7__content-text__user">Luke Wayne </span>
+                  added as your friend.
+                </p>
+              </div>
             </div>
           </div>
-          <div>
-            Hidden Container
-            <ul>
-              <li>
-                <svg></svg>
-                <span>Dashboard</span>
+          <div id="dy-7__container" class="dy-7__hidden-container">
+            <ul class="dy-7__hidden__item-list">
+              <li id="li-menu-1">
+                <span class="dy-7__hidden__item"
+                  ><i class="fa-solid fa-gauge-high"></i>Dashboard</span
+                >
+              </li>
+              <li id="li-menu-2">
+                <span class="dy-7__hidden__item"
+                  ><i class="fa-solid fa-user"></i>Profile</span
+                >
+              </li>
+              <li id="li-menu-3">
+                <span class="dy-7__hidden__item"
+                  ><i class="fa-solid fa-bell"></i>Notifications</span
+                >
+              </li>
+              <li id="li-menu-4">
+                <span class="dy-7__hidden__item"
+                  ><i class="fa-solid fa-comments"></i>Messages</span
+                >
+              </li>
+              <li id="li-menu-5">
+                <span class="dy-7__hidden__item"
+                  ><i class="fa-solid fa-gear"></i>Settings</span
+                >
               </li>
             </ul>
           </div>
@@ -246,5 +285,9 @@
       </section>
     </main>
     <script src="./index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/460b41b87d.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

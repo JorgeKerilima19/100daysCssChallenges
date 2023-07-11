@@ -11,7 +11,6 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  transition: 0.3s;
 }
 :root {
   --day-container-height: 2em;
@@ -754,13 +753,15 @@ body {
   font-size: 0.8rem;
 }
 .day-7__bg {
-  background-color: rgb(31, 44, 80);
+  background-color: #1f2c50;
   font-family: sans-serif;
 }
 .dy-7__container-front {
   width: 20rem;
   height: 20rem;
   background-color: white;
+  transition: 0.5s;
+  z-index: 100;
 }
 .dy-7__container-front__navbar {
   display: flex;
@@ -844,6 +845,8 @@ body {
   flex-direction: column;
   position: relative;
   padding-left: 1.5rem;
+  justify-content: space-evenly;
+  height: 16rem;
 }
 .dy-7__content-line {
   width: 0.2rem;
@@ -857,6 +860,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0.5rem 1.5rem 0 1.5rem;
+  transition: 0.2s;
 }
 .dy7__content-date {
   display: flex;
@@ -883,12 +887,62 @@ body {
 .dy7__content-text__user {
   font-weight: 600;
 }
-.dy-7__content-container:hover {
+.dy-7__content:hover {
   color: #78beff;
   cursor: pointer;
+}
+.dy-7__hidden-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 10rem;
+  height: 18rem;
+  z-index: 1;
+  color: rgb(14, 42, 58);
+  transition: 0.5s;
+}
+.dy-7__hidden-open {
+  transform: translate(-155%, -50%);
+}
+.dy-7__front-open {
+  transform: translate(20%, 0%);
+}
+.dy-7__hidden__item-list {
+  width: 100%;
+  background-color: #466786;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.dy-7__hidden__item {
+  font-size: 1.1rem;
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  height: 100%;
+  gap: 0.5rem;
+  letter-spacing: 0.05rem;
+}
+.dy-7__hidden__item:hover {
+  background-color: #1f2c50;
+  color: #fff;
 }
 @media (max-width: 500px) {
   .day-1__bg {
     font-size: 60%;
+  }
+  .dy-7__hidden-container {
+    opacity: 0;
+  }
+  .dy-7__front-open {
+    transform: translate(0%, 0%);
+  }
+  .dy-7__hidden-open {
+    transform: translate(-100%, -35%);
+    opacity: 1;
+    z-index: 200;
   }
 }
