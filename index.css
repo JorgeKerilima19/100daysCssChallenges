@@ -760,7 +760,7 @@ body {
 .dy-7__container-front {
   width: 20rem;
   height: 20rem;
-  background-color: #4ec6ca;
+  background-color: white;
 }
 .dy-7__container-front__navbar {
   display: flex;
@@ -838,6 +838,54 @@ body {
   pointer-events: all;
   transform: translateX(0%);
   filter: opacity(1);
+}
+.dy-7__content-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: 1.5rem;
+}
+.dy-7__content-line {
+  width: 0.2rem;
+  height: 16rem;
+  background-color: rgb(168, 168, 168);
+  position: absolute;
+  top: 0;
+  left: 1.5rem;
+}
+.dy-7__content {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1.5rem 0 1.5rem;
+}
+.dy7__content-date {
+  display: flex;
+  gap: 0.5rem;
+  position: relative;
+  left: -1.85rem;
+}
+.dy7__content-date__circle {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background-color: white;
+  border-style: solid;
+  border-color: #5f98cd;
+  border-width: 0.28rem;
+  box-sizing: initial;
+}
+.dy7__content-date__date {
+  font-size: 0.7rem;
+}
+.dy7__content-text {
+  font-size: 1.05rem;
+}
+.dy7__content-text__user {
+  font-weight: 600;
+}
+.dy-7__content-container:hover {
+  color: #78beff;
+  cursor: pointer;
 }
 @media (max-width: 500px) {
   .day-1__bg {
