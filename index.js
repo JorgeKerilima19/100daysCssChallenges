@@ -1,3 +1,9 @@
+const menu = document.querySelector("#menu");
+
+menu.addEventListener("click", () => {
+  menu.classList.toggle("open")
+});
+
 const searchButton = document.getElementById("day-7__search");
 const searchInput = document.getElementById("day-7__input");
 
