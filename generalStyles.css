@@ -52,6 +52,9 @@
 .flex__wrap {
   flex-wrap: wrap;
 }
+.pd-left__sm {
+  padding-left: 0.5rem;
+}
 .pd-left__md {
   padding-left: 1rem;
 }
