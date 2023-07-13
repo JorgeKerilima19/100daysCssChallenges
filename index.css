@@ -935,14 +935,35 @@ body {
 }
 .dy-8__frame {
   display: flex;
+  position: relative;
 }
 .dy-8__ball {
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
-  background-color: whitesmoke;
-  transform-origin: 10% 10%;
-  animation: rotate 3s infinite;
+  background-color: white;
+  position: relative;
+  filter: blur(0.05rem);
+}
+.dy-8__ball-bubble {
+  position: absolute;
+  height: 4rem;
+  width: 4rem;
+  transform: rotate(var(--rotate));
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(0.01rem);
+}
+.dy-8__ball-bubble::after {
+  content: "";
+  height: var(--height);
+  width: var(--width);
+  position: absolute;
+  background-color: white;
+  transform-origin: var(--transform-origin);
+  animation: rotate var(--time) var(--delay) ease-in-out infinite;
+  border-radius: 50%;
 }
 @keyframes rotate {
   from {
