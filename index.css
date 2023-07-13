@@ -930,6 +930,29 @@ body {
   background-color: #1f2c50;
   color: #fff;
 }
+.dy-8__bg {
+  background-color: #2f6496;
+}
+.dy-8__frame {
+  display: flex;
+}
+.dy-8__ball {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  transform-origin: 10% 10%;
+  animation: rotate 3s infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  to {
+    transform: rotate(360deg) translate3d(0, 0, 0);
+  }
+}
+
 @media (max-width: 500px) {
   .day-1__bg {
     font-size: 60%;
