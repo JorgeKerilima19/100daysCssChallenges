@@ -943,7 +943,7 @@ body {
   border-radius: 50%;
   background-color: white;
   position: relative;
-  filter: blur(0.05rem);
+  filter: blur(1px);
 }
 .dy-8__ball-bubble {
   position: absolute;
@@ -953,7 +953,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  filter: blur(0.01rem);
+  filter: blur(0.5px);
 }
 .dy-8__ball-bubble::after {
   content: "";
@@ -964,6 +964,19 @@ body {
   transform-origin: var(--transform-origin);
   animation: rotate var(--time) var(--delay) ease-in-out infinite;
   border-radius: 50%;
+}
+.dy-8__sparkle {
+  position: absolute;
+  height: var(--height);
+  width: var(--width);
+  background-color: white;
+  transform-origin: var(--transform-origin);
+  animation: rotate 4s var(--delay) linear infinite;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(0.5px);
 }
 @keyframes rotate {
   from {
@@ -988,5 +1001,13 @@ body {
     transform: translate(-100%, -35%);
     opacity: 1;
     z-index: 200;
+  }
+  .dy-8__frame {
+    width: 20rem;
+    height: 20rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
