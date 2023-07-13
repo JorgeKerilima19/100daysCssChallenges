@@ -988,6 +988,7 @@ body {
 }
 .day-9__bg {
   background-color: rgb(22, 22, 22);
+  font-family: sans-serif;
 }
 .dy-9__bg {
   background-color: white;
@@ -1045,9 +1046,6 @@ body {
   top: 80%;
   left: 60%;
 }
-.dy-9__content {
-  height: 4rem;
-}
 [class^="dy-9__hill"] {
   height: 20rem;
   width: 20rem;
@@ -1075,10 +1073,28 @@ body {
   z-index: 50;
 }
 .dy-9__hill-5 {
-  background-color: hsl(220, 30%, 28%);   
+  background-color: hsl(220, 30%, 28%);
   top: 60%;
   left: -8rem;
   z-index: 50;
+}
+.dy-9__content {
+  height: 4rem;
+  display: grid;
+  grid-template-columns: 55% 40%;
+  padding: 0.5rem;
+  column-gap: 1rem;
+}
+.dy-9__content-container {
+  display: grid;
+  grid-template-areas:
+    "big ."
+    "big .";
+  place-items: center;
+}
+.dy-9__span-1 {
+  grid-area: big;
+  font-size: 2em;
 }
 @media (max-width: 500px) {
   .day-1__bg {
